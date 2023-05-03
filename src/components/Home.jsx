@@ -4,12 +4,10 @@ import Nav from './Nav'
 import Typed from 'typed.js'
 import Particle from "./BGparticles/Particle";
 import Menu from "./Menu";
-import { useTranslation } from "react-i18next";
 import { FormattedMessage } from "react-intl";
 
 export default function Home(){
      
-    const {t} = useTranslation("global")
     const el= useRef(null)
 
     useEffect(() => {
