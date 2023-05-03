@@ -1,0 +1,101 @@
+.nav {
+    width: 100%;
+    background-color: #000000;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    margin: 0;
+}
+
+.logo{
+    width: 40%;
+    height: 60%;
+    z-index: 1;
+}
+
+.contLogo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    z-index: 1;
+}
+
+.contMode{
+    z-index: 1;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.darkMode {
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    padding: 0px 10px   ;
+    width: 120px;
+    height: 55%;
+}
+
+.darkMode img {
+    width: 30px;
+    height: 80%;
+}
+
+.darkMode p {
+    font-weight: bold;
+}
+
+.divIdioma {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    width: 120px;
+    opacity: 1;
+    transform: translateY(60px);
+}
+
+.btnEs {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    background: linear-gradient(38deg, rgba(13,159,226,1) 0%, rgba(31,60,120,1) 100%);  
+}
+
+.btnEs p , .btnEn p{
+    font-size: .9rem;
+    color: white;
+}
+
+.btnEs img, .btnEn img {
+    width: 18%;
+}
+
+.btnEn {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    background: linear-gradient(38deg, rgba(13,159,226,1) 0%, rgba(31,60,120,1) 100%);
+}
+
+
+.btnEn:hover , .btnEs:hover {
+    background: linear-gradient(38deg, rgb(23, 98, 133) 0%, rgba(31,60,120,1) 100%);
+}

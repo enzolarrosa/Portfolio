@@ -1,0 +1,74 @@
+.slider{
+    width: 550px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 550px;
+    height: 350px;
+    transition: 1s ease-out;
+}
+
+.slide{
+    min-width: 550px;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.slide img {
+    border-radius: 5px;
+    min-width: 550px;
+    height: 350px;
+}
+
+.divBtn {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+}
+
+.divBtn button {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--title);
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin-bottom: 15%;
+    z-index: 101;
+}
+
+.divIndex {
+    display: flex;
+    width: 100%;
+    margin-top: 4%;
+    height: 10%;
+    justify-content: center;
+    gap: 10px;
+    z-index: 100;
+}
+
+.btnIndex , .index {
+    cursor: pointer;
+    width: 34px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.162);
+    border-radius: 1px;
+}
+
+.index {
+    background-color: rgb(255, 255, 255);
+}

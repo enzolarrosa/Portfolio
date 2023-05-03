@@ -1,0 +1,18 @@
+{
+        "home.parrafo1": "Hello, I am",
+        "about.title": "About Me",
+        "about.subtitle": "Who I am?",
+        "about.parrafo": "My name is Nicolas Larrosa, I am 21 years old, I am a Full Stack Developer focused on web development. I consider myself someone autonomous, self-taught, with great problem solving and good teamwork. Contact me and I can tell you more about me!",
+        "about.cv": "Dowloand CV",
+        "skills.title": "Skills",
+        "skills.subtitle1": "Front End",
+        "skills.subtitle2": "Back End",
+        "skills.subtitle3": "Tools",
+        "projects.title": "Projects",
+        "contact.title": "Contact",
+        "contact.subtitle1": "Contact me and let's work together !",
+        "contact.subtitle2": "You can also contact me through my social networks :",
+        "contact.submit": "Submit",
+        "footer.derechos1": "Page created by Nicolas Larrosa",
+        "footer.derechos2": "© All rights reserved"
+}

@@ -1,0 +1,115 @@
+
+.home{
+    display: flex;
+    width: 100%;
+    height: 92vh;
+}
+
+.divInfo {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    max-height: 90%;
+    gap: 20px;
+}
+
+.info {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    z-index: 1;
+    animation: top 1.7s ease-in-out ;
+}
+
+.name{
+    margin: 0;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 4px 4px 5px rgba(27, 170, 141, 0.826); */
+    margin-bottom: 10px;
+    font-weight: 800;
+    z-index: 1;
+    animation: left 1.7s ease-in-out ;
+}
+
+.full{
+    color: #ff0000;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 80px;
+    animation: rigth 1.7s ease-in-out ;
+    z-index: 1;
+}
+
+.menu{
+    display: flex;
+    background: rgba(0, 0, 0, 0.563);
+    width: 30%;
+    height: 10%;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    left: 34vw;
+    bottom: 40px;
+    border-radius: 50px;
+    z-index: 200;
+}
+
+.ulMenu{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    gap: 3%;
+    margin: 0;
+    align-items: center;
+}
+
+.liMenu{
+    list-style: none;
+}
+
+.liMenu a {
+    border-radius: 30px;
+    padding: 14px 15px;
+    font-size: 0.8rem;
+    color: var(--title);
+    transition: 0.3s;
+}
+
+.liMenu a:hover {
+    color: white;
+}
+
+@keyframes left {
+    0% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes rigth {
+    0% {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes top {
+    0% {
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

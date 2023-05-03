@@ -1,0 +1,19 @@
+{
+        "home.parrafo1": "Hola, yo soy",
+        "about.title": "Sobre Mi",
+        "about.subtitle": "Quien soy?",
+        "about.parrafo": "Me llamo Nicolas Larrosa tengo 21 años, soy un Full Stack Developer orientado en desarrollo web, Me considero alguien autónomo, autodidacta , con gran resolución de problemas y buen trabajo en equipo. Contactame y te puedo contar mas sobre mi ! ",
+        "about.cv": "Descargar CV",
+        "skills.title": "Habilidades",
+        "skills.subtitle1": "Interfaz",
+        "skills.subtitle2": "Servidor",
+        "skills.subtitle3": "Herramientas",
+        "projects.title": "Proyectos",
+        "contact.title": "Contacto",
+        "contact.subtitle1": "Contácteme y trabajemos juntos !",
+        "contact.subtitle2": "Puede contactarme tambien por mis redes sociales :",
+        "contact.submit": "Enviar",
+        "footer.derechos1": "Pagina creada por Nicolas Larrosa",
+        "footer.derechos2": "© Todos los derechos reservados"
+
+}
