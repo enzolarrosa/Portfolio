@@ -6,6 +6,7 @@ import {FiChevronLeft ,FiChevronRight} from "react-icons/fi"
 export default function CarouselTwo({children: slides}){
     
     const [index, setIndex] = useState(0)
+    const [title, setTitle] = useState(slides[0].title)
 
 
 
@@ -16,14 +17,17 @@ export default function CarouselTwo({children: slides}){
 
     function next(){ 
       setIndex(slides.length -1 == index? 0 : index +1)
+      setTitle(slides.length -1 == index? slides[0].title : slides[index +1].title)
     }
 
     function indexSlide(i) {
         setIndex(i)
+        setTitle(slides[i].title)
     }
 
     function prev(){ 
         setIndex(index == 0? slides.length -1 : index -1)
+        setTitle(index == 0? slides[slides.length -1].title : slides[index -1].title)
       }
 
     return (
@@ -37,6 +41,7 @@ export default function CarouselTwo({children: slides}){
             </div>
           ))}
             </div>
+            <p className={c.titleProj}>{title}</p>
             <div className={c.divBtn}>
                 <button className={c.btnLeft} onClick={() => prev()}><FiChevronLeft/></button>
                 <button className={c.btnRight} onClick={() => next()}><FiChevronRight/></button>                
