@@ -1,5 +1,5 @@
 .slider{
-    width: 80%;
+    width: 70%;
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -78,8 +78,8 @@
 
 .btnIndex , .index {
     cursor: pointer;
-    width: 34px;
-    height: 4px;
+    width: 50px;
+    height: 7px;
     background-color: rgba(255, 255, 255, 0.162);
     border-radius: 1px;
 }
