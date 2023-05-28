@@ -1,6 +1,5 @@
 import React, {useEffect, useRef} from "react";
 import h from '../style/Home.module.css'
-import Nav from './Nav'
 import Typed from 'typed.js'
 import Particle from "./BGparticles/Particle";
 import Menu from "./Menu";
@@ -28,7 +27,6 @@ export default function Home(){
     return(
         <div id='home'>
         <Particle/>
-            <Nav/>
         <div className={h.home}>
             <div className={h.divInfo}>
                 <p className={h.info}><FormattedMessage id={"home.parrafo1"} defaultMessage='Hello, I am'/></p>

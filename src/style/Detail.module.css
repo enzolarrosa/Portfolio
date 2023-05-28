@@ -1,0 +1,131 @@
+.conteiner {
+    width: 100%;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 140vh;
+    align-items: center;
+}
+
+.contDetail{
+    width: 100%;
+    display: flex;
+    height: 200vh;
+    flex-direction: column;
+    background-color: var(--bg);
+    height: 100vh;
+    gap: 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divTitle{
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+.divTitle h1{
+    font-size: 2rem;
+    color: var(--title);
+    font-weight: 900;
+}
+
+.divImg {
+    width: 95%;
+    display: flex;
+    height: 25%;
+    justify-content: space-around;
+    
+}
+
+.divImg img {
+    width: calc(85% / 3);
+    border-radius: 9px
+}
+
+.divInfo {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 10%;
+    
+}
+
+.divObj, .divTech {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    justify-content: start;
+    gap: 10%;
+    flex-direction: column;
+}
+
+.divObj h2, .divTech h2 {
+    color: var(--title);
+    font-weight: 400;
+}
+
+.divObj p, .divTech p {
+    color: white;
+}
+
+.divLinks {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    margin-bottom: 2%;
+}
+
+.btn {
+    width: 13%;
+    cursor: pointer;
+    position: relative;
+    transition: .5s ease-in-out all;
+    display: flex;
+    height: 65%;
+    border-radius: 8px;
+    text-decoration: none;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    border: 2px solid var(--colorSecu) ;
+    background-color: rgba(0, 0, 0, 0.332);
+    color: white;
+}
+
+.btn span{
+    position: relative;
+    transition: .5s ease-in-out all;
+    z-index: 2;
+}
+
+.btn::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    margin-bottom: 50%;
+    background: linear-gradient(38deg, rgba(13,159,226,1) 0%, rgba(31,60,120,1) 80%);
+    transition: .5s ease-in-out all;
+}
+
+.btn:hover::after{
+    margin-bottom: 0%;
+    transition: .5s ease-in-out all;
+}
+
+.btn:hover{
+    border: none;
+    transition: .1s ease-in-out all;
+}

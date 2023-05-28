@@ -1,4 +1,5 @@
 import React, {useState, useContext} from 'react'
+import { Link } from 'react-router-dom'
 import n from '../style/Nav.module.css'
 import logo from '../img/logo.png'
 import es from '../img/spanish.png'
@@ -71,7 +72,9 @@ export default function Nav() {
     return(
         <div className={n.nav}>
             <div className={n.contLogo}>
+                <Link to='/'>
                 <img className={n.logo} src={logo} alt='logo'/>
+                </Link>
             </div>
             <div className={n.contMode}>
                 <button onClick={() => selectIdioma()} className={n.darkMode}>

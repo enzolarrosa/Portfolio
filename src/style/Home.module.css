@@ -36,7 +36,7 @@
 }
 
 .full{
-    color: #ff0000;
+    color: var(--title);
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 80px;
@@ -47,7 +47,7 @@
 .menu{
     display: flex;
     background: rgba(0, 0, 0, 0.563);
-    width: 30%;
+    width: 28%;
     height: 10%;
     backdrop-filter: blur(2px);
     position: fixed;
@@ -74,7 +74,7 @@
 .liMenu a {
     border-radius: 30px;
     padding: 14px 15px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--title);
     transition: 0.3s;
 }

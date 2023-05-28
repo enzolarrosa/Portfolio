@@ -10,11 +10,11 @@ export default function Menu(){
     return(
         <div className={h.menu}>
             <ul className={h.ulMenu}>
-                <li className={h.liMenu}><Link to='home' offset={-50} spy={true} href="#home"><FaHome/></Link></li>
-                <li className={h.liMenu}><Link to='about' offset={-50} spy={true} href="#about"><FaUserAlt/></Link></li>
-                <li className={h.liMenu}><Link to='skills' offset={-50} spy={true} href="#skills"><FaClipboardList/></Link></li>
-                <li className={h.liMenu}><Link to='proyects' offset={-50} spy={true} href="#proyects"><AiFillFile/></Link></li>
-                <li className={h.liMenu}><Link to='contact' offset={-70} spy={true} href="#contact"><SiGooglemessages/></Link></li>
+                <li className={h.liMenu}><Link to='home' offset={-20} spy={true} href="#home"><FaHome/></Link></li>
+                <li className={h.liMenu}><Link to='about' offset={0} spy={true} href="#about"><FaUserAlt/></Link></li>
+                <li className={h.liMenu}><Link to='skills' offset={0} spy={true} href="#skills"><FaClipboardList/></Link></li>
+                <li className={h.liMenu}><Link to='proyects' offset={0} spy={true} href="#proyects"><AiFillFile/></Link></li>
+                <li className={h.liMenu}><Link to='contact' offset={0} spy={true} href="#contact"><SiGooglemessages/></Link></li>
             </ul>
         </div>
     )

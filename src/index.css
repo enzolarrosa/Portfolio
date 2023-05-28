@@ -12,12 +12,8 @@ html{
 }
 
 :root {
-  /* --bg: #0e0e0f; */
   --bg: #090e19;
-  --fontPrimary: #1c365a;
-  /* --title: #45f3ff; */
   --title: #0d9fe2;
-  /* --colorSecu: #ff0055; */
   --colorSecu: #0d9fe2;
 }
 code {

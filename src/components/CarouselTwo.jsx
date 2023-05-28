@@ -36,7 +36,7 @@ export default function CarouselTwo({children: slides}){
           {slides.map(e => (
               <div className={c.slide}>
                 <Link to={`/proyect/${e.title}`}>
-                <img src={e.img} alt='proyect'/>
+                <img src={e.img1} alt='proyect'/>
                 </Link>
             </div>
           ))}
