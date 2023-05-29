@@ -75,10 +75,10 @@ button {
   display: none;
   flex-direction: column;
   position: absolute;
-  top: 0;
-  width: 120px;
+  top: 9%;
+  width: 130px;
   opacity: 1;
-  transform: translateY(60px);
+  /* transform: translateY(60px); */
 }
 
 .dropArrow{
