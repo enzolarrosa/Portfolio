@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from "react";
+import React, {useEffect, useRef,useContext} from "react";
 import h from '../style/Home.module.css'
 import Typed from 'typed.js'
 import Particle from "./BGparticles/Particle";
@@ -9,6 +9,7 @@ import { langContext } from '../context/context.jsx';
 export default function Home(){
      
     const el= useRef(null)
+    const lang = useContext(langContext);
 
     useEffect(() => {
         const typed= new Typed (el.current,{
