@@ -4,6 +4,7 @@ import Typed from 'typed.js'
 import Particle from "./BGparticles/Particle";
 import Menu from "./Menu";
 import { FormattedMessage } from "react-intl";
+import { langContext } from '../context/context.jsx';
 
 export default function Home(){
      
@@ -21,7 +22,11 @@ export default function Home(){
             autoInsertCss:true,
             loop:true
         });
+    
+    })
 
+    useEffect(()=>{
+        lang.selectLanguage('en-US')
     })
 
     return(
