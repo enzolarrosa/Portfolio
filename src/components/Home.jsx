@@ -28,7 +28,7 @@ export default function Home(){
 
     useEffect(()=>{
         lang.selectLanguage('en-US')
-    })
+    },[])
 
     return(
         <div id='home'>
