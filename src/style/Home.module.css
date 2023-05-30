@@ -47,7 +47,8 @@
 .menu{
     display: flex;
     background: rgba(0, 0, 0, 0.563);
-    width: 30%;
+    width: max-content;
+    padding:  0.7rem 1.7rem;
     height: 10%;
     backdrop-filter: blur(2px);
     position: fixed;

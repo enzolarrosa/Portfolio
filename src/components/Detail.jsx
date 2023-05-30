@@ -16,7 +16,7 @@ export default function Detail({title, img1,img2,img3,obj,tech,deploy,repo}){
             </div>
             <div className={d.divInfo}>
                 <div className={d.divObj}>
-                    <h2><FormattedMessage id={`obj.obj`}/></h2>
+                    <h2><FormattedMessage id={`obj.obj`} defaultMessage={'obj.obj'}/></h2>
                     <p><FormattedMessage id={`obj.${obj}`}/></p>
                 </div>
                 <div className={d.divTech}>

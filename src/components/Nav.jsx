@@ -72,7 +72,7 @@ export default function Nav() {
     return(
         <div className={n.nav}>
             <div className={n.contLogo}>
-                <Link to='/'>
+                <Link className={n.link} to='/'>
                 <img className={n.logo} src={logo} alt='logo'/>
                 </Link>
             </div>
