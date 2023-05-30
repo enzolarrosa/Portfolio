@@ -93,7 +93,25 @@
 .icons:hover ,.postman:hover , .npm:hover {
     transform: scale(130%);
     filter: saturate(200%);
+}
 
+@media only screen and (max-width: 555px) {
+    .divSkills{
+        width: 80%;
+        height: 30%;
+        padding: 0;
+    }
+    .conteinerIcons{
+        padding-top: 3%;
+    }
+    .icons , .npm , .postman{
+        width: 100%;
+        height: 35px;
+    }
+    .divH5:hover .h5{
+        opacity: 1;
+        transform: translateY(-55px);
+    } 
 }
 
 

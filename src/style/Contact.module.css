@@ -184,7 +184,7 @@
     position: absolute;
     z-index: 1;
     top: 0;
-    left: -120%;
+    left: -180%;
     border-bottom: 40px solid var(--colorSecu);
     border-right: 30px solid rgba(251, 255, 0, 0);
     transition: .5s ease-in-out all;
@@ -198,5 +198,41 @@
 .divFour button:hover{
 
     transition: .1s ease-in-out all;
+}
+
+@media only screen and (max-width: 708px) {
+    .contRedes {
+        width: 90%;
+        height: 50%;
+    }
+    .form {
+        width: 90%;
+        height: 50%;
+    }
+}
+
+@media only screen and (max-width: 439px) {
+    .contRedes {
+        width: 90%;
+        height: 50%;
+    }
+    .divOne h3{
+        font-size: 0.9rem;
+        color: white;
+        font-weight: 800;
+    }
+    .form {
+        width: 90%;
+        height: 50%;
+    }
+    .divThree ,.divTwo{
+        width: 90%;
+    }
+    .divFour {
+        height: 13%;
+    }
+    .divFour Button {
+        height: 70%;
+    }
 }
 

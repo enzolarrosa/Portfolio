@@ -1,6 +1,6 @@
 .conteiner {
     width: 100%;
-    height: 90%; 
+    height: 100%; 
     display: flex;
     justify-content: center;
     gap: 2%;
@@ -113,7 +113,7 @@
 .image{
     width: 250px;
     height: 253px;
-    border-radius: 5px;
+    border-radius: 25px;
     transform: rotateZ(15deg);
     transition: 0.7s;
     filter: grayscale(70%);
@@ -126,22 +126,30 @@
 
 @media only screen and (max-width: 945px) {
     .info a::after {
-        content: "";
-        width: 100%;
-        position: absolute;
-        z-index: 1;
-        top: 0;
         left: -180%;
-        border-bottom: 55px solid var(--colorSecu);
-        border-right: 40px solid rgba(251, 255, 0, 0);
-        transition: .5s ease-in-out all;
     }
     .info h3{
-        color: var(--title);
         width: 100%;
         text-align: center;
-        margin-right: 60%;
-        font-weight: 600;
-        font-size: 1.7rem;
+    }
+    .info{
+        width: 90%;
+        height: 55%;
+    }
+    .divImage {
+        width: 70%;
+        height: 25%;
+        align-items: end;
+    }
+    .contImage, .image {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .info{
+        width: 100%;
+        padding: 0px 30px;
     }
 }

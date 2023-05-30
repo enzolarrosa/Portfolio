@@ -39,3 +39,33 @@
 .icons:hover{
     color: var(--title);
 }
+
+@media only screen and (max-width: 670px) {
+    .divOne, .divTwo {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 447px) {
+    .divOne p {
+        color: white;
+        font-size: .7rem;
+    }
+    .icons {
+        color: rgba(227, 225, 225, 0.865);
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 342px) {
+    .divOne p {
+        color: white;
+        font-size: .5rem;
+    }
+    .icons {
+        color: rgba(227, 225, 225, 0.865);
+        font-size: .9rem;
+        cursor: pointer;
+    }
+}
