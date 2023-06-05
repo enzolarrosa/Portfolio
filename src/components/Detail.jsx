@@ -2,7 +2,7 @@ import React from "react";
 import {FormattedMessage} from "react-intl"
 import d from '../style/Detail.module.css'
 
-export default function Detail({title, img1,img2,img3,obj,tech,deploy,repo}){
+export default function Detail({title, img1,img2,img3,obj1,obj,tech,deploy,repo}){
 
     return(
         <div className={d.contDetail}>
@@ -16,11 +16,11 @@ export default function Detail({title, img1,img2,img3,obj,tech,deploy,repo}){
             </div>
             <div className={d.divInfo}>
                 <div className={d.divObj}>
-                    <h2><FormattedMessage id={`obj.obj`} defaultMessage={'obj.obj'}/></h2>
-                    <p><FormattedMessage id={`obj.${obj}`}/></p>
+                    <h2><FormattedMessage id={`obj.obj`} defaultMessage={'Objetive'}/></h2>
+                    <p><FormattedMessage defaultMessage={obj} id={`obj.${obj1}`}/></p>
                 </div>
                 <div className={d.divTech}>
-                <h2><FormattedMessage id={`obj.tech`}/></h2>
+                <h2><FormattedMessage defaultMessage={'Technologies'} id={`obj.tech`}/></h2>
                     <p>{tech}</p>
                 </div>
             </div>
