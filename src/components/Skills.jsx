@@ -4,14 +4,18 @@ import {FaNpm} from 'react-icons/fa'
 import {DiScrum} from 'react-icons/di'
 import s from '../style/Skills.module.css'
 import { FormattedMessage } from "react-intl";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Skills () {
+    
+    AOS.init()
 
     return(
         <div id="skills">
             <h1 className="title"><FormattedMessage id="skills.title" defaultMessage="Skills" /></h1>
             <div className={s.conteiner}>
-                <div className={s.divSkills}>
+                <div data-aos-once="true" data-aos-delay="150" data-aos-duration="1000" data-aos="flip-right" className={s.divSkills}>
                     <h2 className={s.subtitle} ><FormattedMessage id="skills.subtitle1" defaultMessage="Front End" /></h2>
                     <div className={s.conteinerIcons} >
                     <div className={s.divIcons}>
@@ -52,7 +56,7 @@ export default function Skills () {
                     </div>
                     </div>
                 </div>
-                <div className={s.divSkills}>
+                <div data-aos-once="true" data-aos-delay="150" data-aos-duration="1000" data-aos="flip-up" className={s.divSkills}>
                     <h2 className={s.subtitle} ><FormattedMessage id="skills.subtitle2" defaultMessage="Back End" /></h2>
                     <div className={s.conteinerIcons} >
                     <div className={s.divIcons}>
@@ -83,7 +87,7 @@ export default function Skills () {
                     </div>
                     </div>
                 </div>
-                <div className={s.divSkills}>
+                <div data-aos-once="true" data-aos-delay="150" data-aos-duration="1000" data-aos="flip-left" className={s.divSkills}>
                     <h2 className={s.subtitle} ><FormattedMessage id="skills.subtitle3" defaultMessage="Tools" /></h2>
                     <div className={s.conteinerIcons} >
                     <div className={s.divIcons}>

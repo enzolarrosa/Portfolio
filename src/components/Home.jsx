@@ -7,7 +7,7 @@ import { langContext } from '../context/context.jsx';
 
 export default function Home(){
     const lang = useContext(langContext);
-
+     
     return(
         <div id='home'>
         <Particle/>

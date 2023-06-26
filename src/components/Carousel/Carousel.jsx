@@ -1,14 +1,12 @@
 import React,{useState , useEffect} from "react";
 import { Link } from "react-router-dom"
-import c from '../style/Carousel.module.css'
+import c from './Carousel.module.css'
 import {FiChevronLeft ,FiChevronRight} from "react-icons/fi"
 
-export default function CarouselTwo({children: slides}){
+export default function Carousel({children: slides}){
     
     const [index, setIndex] = useState(0)
     const [title, setTitle] = useState(slides[0].title)
-
-
 
     useEffect(() =>{
         const slideInterval = setInterval(next, 3000)
@@ -28,11 +26,11 @@ export default function CarouselTwo({children: slides}){
     function prev(){ 
         setIndex(index == 0? slides.length -1 : index -1)
         setTitle(index == 0? slides[slides.length -1].title : slides[index -1].title)
-      }
+    }
 
     return (
         <div className={c.slider}>
-            <div style={{margin: `0% -${index*100}%`}} className={c.slides}>
+            <div id="carousel" style={{margin: `0% -${index*100}%`}} className={c.slides}>
           {slides.map(e => (
               <div className={c.slide}>
                 <Link to={`/proyect/${e.title}`}>

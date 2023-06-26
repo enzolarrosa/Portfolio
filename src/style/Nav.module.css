@@ -17,7 +17,7 @@
 }
 
 .logo{
-    width: 100%;
+    width: 90%;
     height: 100%;
     z-index: 1;
 }
@@ -40,7 +40,7 @@
     align-items: center;
 }
 
-.darkMode {
+.mode {
     border-radius: 20px;
     display: flex;
     justify-content: space-evenly;
@@ -49,15 +49,15 @@
     cursor: pointer;
     padding: 0px 10px   ;
     width: 130px;
-    height: 55%;
+    height: 62%;
 }
 
-.darkMode img {
+.mode img {
     width: 32px;
     height: 80%;
 }
 
-.darkMode p {
+.mode p {
     font-weight: bold;
 }
 

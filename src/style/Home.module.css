@@ -21,7 +21,7 @@
     font-weight: bold;
     margin-bottom: 10px;
     z-index: 1;
-    animation: top 1.7s ease-in-out ;
+    animation: top .6s linear ;
 }
 
 .name{
@@ -32,7 +32,7 @@
     margin-bottom: 10px;
     font-weight: 800;
     z-index: 1;
-    animation: left 1.7s ease-in-out ;
+    animation: left .6s linear ;
 }
 
 .full{
@@ -40,7 +40,7 @@
     font-size: 1.9rem;
     font-weight: bold;
     margin-bottom: 80px;
-    animation: rigth 1.7s ease-in-out ;
+    animation: rigth .6s linear;
     z-index: 1;
 }
 
@@ -89,7 +89,7 @@
 @keyframes left {
     0% {
         opacity: 0;
-        transform: translateX(-500px);
+        transform: translateX(-150px);
     }
     100%{
         opacity: 1;
@@ -99,17 +99,17 @@
 @keyframes rigth {
     0% {
         opacity: 0;
-        transform: translateX(500px);
+        transform: translateY(100px);
     }
     100%{
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
 }
 @keyframes top {
     0% {
         opacity: 0;
-        transform: translateY(-500px);
+        transform: translateY(-40px);
     }
     100%{
         opacity: 1;

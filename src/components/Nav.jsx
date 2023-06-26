@@ -77,7 +77,7 @@ export default function Nav() {
                 </Link>
             </div>
             <div className={n.contMode}>
-                <button onClick={() => selectIdioma()} className={n.darkMode}>
+                <button onClick={() => selectIdioma()} className={n.mode}>
                     <img src={idioma.img} alt='idioma' />
                     <p>{idioma.p}</p>
                     <SlArrowRight className='dropArrow'/>

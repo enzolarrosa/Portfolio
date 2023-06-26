@@ -1,5 +1,5 @@
 import React from "react";
-import CarouselTwo from "./CarouselTwo";
+import Carousel from "./Carousel/Carousel.jsx";
 import { FormattedMessage } from "react-intl";
 import imgFood1 from '../img/FOOD1.png'
 import imgFood2 from '../img/FOOD2.png'
@@ -32,9 +32,9 @@ img1:imgMundi1, img2:imgMundi2,img3:imgMundi3,obj:"Create an Ecommerce where you
     return(
         <div id="proyects">
             <h1 className="title"><FormattedMessage id="projects.title" defaultMessage="Projects" /></h1>
-                <CarouselTwo>
+                <Carousel>
                         {slides}
-                </CarouselTwo>
+                </Carousel>
         </div>
     )
 }

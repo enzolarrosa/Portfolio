@@ -2,13 +2,16 @@ import React, {useEffect} from "react";
 import {FiGithub , FiLinkedin, FiMail, FiInstagram} from 'react-icons/fi'
 import c from '../style/Contact.module.css'
 import { FormattedMessage } from "react-intl";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function ContactMe(){
 
     useEffect(() =>{
       efect()
     },[])
-
+    
+    AOS.init()
 
     function efect(){
         const input = document.querySelector('#input')
@@ -65,10 +68,10 @@ export default function ContactMe(){
             <p><FormattedMessage id="contact.subtitle2" defaultMessage="You can also contact me through my social networks :" /></p>
             </div>
             <div  className={c.divIcons}>
-            <a className={c.icons} target="_blank" href="mailto:enzolarrosa@gmail.com"><FiMail/></a>
-            <a className={c.icons} target="_blank" href="https://github.com/enzolarrosa"><FiGithub/></a>
-            <a className={c.icons} target="_blank" href="https://www.linkedin.com/in/larrosanicolas/"><FiLinkedin/></a>
-            <a className={c.icons} target="_blank" href="https://www.instagram.com/nico_larrosaa/"><FiInstagram/></a>
+            <a data-aos-once="true" data-aos-delay="50" data-aos-duration="1200" data-aos="fade-down" className={c.icons} target="_blank" href="mailto:enzolarrosa@gmail.com"><FiMail/></a>
+            <a data-aos-once="true" data-aos-delay="150" data-aos-duration="1200" data-aos="fade-down" className={c.icons} target="_blank" href="https://github.com/enzolarrosa"><FiGithub/></a>
+            <a data-aos-once="true" data-aos-delay="250" data-aos-duration="1200" data-aos="fade-down" className={c.icons} target="_blank" href="https://www.linkedin.com/in/larrosanicolas/"><FiLinkedin/></a>
+            <a data-aos-once="true" data-aos-delay="350" data-aos-duration="1200" data-aos="fade-down" className={c.icons} target="_blank" href="https://www.instagram.com/nico_larrosaa/"><FiInstagram/></a>
             </div>
             </div>
             </div>
